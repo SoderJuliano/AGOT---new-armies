@@ -1,0 +1,45 @@
+agot_flame_archers_unstable_fire = {
+	army_damage_mult = -0.08
+	army_toughness_mult = -0.05
+	monthly_prestige = -0.15
+}
+
+agot_flame_archers_rhllor_zeal = {
+	army_damage_mult = 0.08
+	army_pursuit_mult = 0.05
+	monthly_prestige = 0.10
+}
+
+agot_second_sons_unpaid = {
+	army_maintenance_mult = 0.20
+	army_damage_mult = -0.08
+	army_toughness_mult = -0.08
+	monthly_prestige = -0.20
+}
+
+agot_monolith_anchor = {
+	army_toughness_mult = 0.08
+	army_screen_add = 2
+	army_pursuit_mult = -0.08
+}
+
+agot_monolith_hammer_impact = {
+	army_damage_mult = 0.07
+	army_toughness_mult = 0.03
+}
+
+agot_bwb_flaming_swords = {
+	army_damage_mult = 0.08
+	army_pursuit_mult = 0.05
+}
+
+agot_bwb_brought_back = {
+	army_toughness_mult = 0.06
+	army_screen_add = 2
+}
+
+agot_bwb_unruly_company = {
+	army_damage_mult = -0.06
+	army_toughness_mult = -0.04
+	army_maintenance_mult = 0.10
+}

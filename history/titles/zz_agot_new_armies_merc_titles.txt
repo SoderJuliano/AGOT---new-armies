@@ -1,0 +1,131 @@
+d_laamp_merc_flame_archers = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_1
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}
+
+d_laamp_merc_mountain_clans = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_3
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}
+
+d_laamp_merc_assault_divers = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_2
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}
+
+d_laamp_merc_second_sons_new = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_4
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}
+
+d_laamp_merc_monolith_guard = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_5
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}
+
+d_laamp_merc_brotherhood_without_banners = {
+	8200.1.1 = {
+		liege = 0
+		holder = AGNA_6
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = {
+						NOT = { has_realm_law = camp_purpose_mercenaries }
+					}
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 2 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+}

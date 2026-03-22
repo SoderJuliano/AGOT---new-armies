@@ -1,0 +1,108 @@
+namespace = agot_new_armies
+
+# Hidden monthly logic:
+# - Flame Archers: random unstable fire/backfire effects
+# - Second Sons: penalties when ruler is poor
+agot_new_armies.0001 = {
+	type = character_event
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ruler = yes
+		is_alive = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_flame_archers_essos }
+			}
+			random_list = {
+				10 = {
+					add_character_modifier = {
+						modifier = agot_flame_archers_rhllor_zeal
+						days = 30
+					}
+				}
+				10 = {
+					add_character_modifier = {
+						modifier = agot_flame_archers_unstable_fire
+						days = 30
+					}
+				}
+				80 = { }
+			}
+		}
+
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_second_sons }
+				NOT = { gold >= 100 }
+			}
+			add_character_modifier = {
+				modifier = agot_second_sons_unpaid
+				days = 30
+			}
+		}
+
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_monolith_warriors }
+			}
+			random_list = {
+				15 = {
+					add_character_modifier = {
+						modifier = agot_monolith_anchor
+						days = 30
+					}
+				}
+				8 = {
+					add_character_modifier = {
+						modifier = agot_monolith_hammer_impact
+						days = 30
+					}
+				}
+				77 = { }
+			}
+		}
+
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners }
+				is_at_war = yes
+			}
+			random_list = {
+				20 = {
+					add_character_modifier = {
+						modifier = agot_bwb_flaming_swords
+						days = 30
+					}
+				}
+				10 = {
+					add_character_modifier = {
+						modifier = agot_bwb_brought_back
+						days = 30
+					}
+				}
+				70 = { }
+			}
+		}
+
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners }
+				is_at_war = no
+			}
+			random_list = {
+				20 = {
+					add_character_modifier = {
+						modifier = agot_bwb_unruly_company
+						days = 30
+					}
+				}
+				80 = { }
+			}
+		}
+	}
+}

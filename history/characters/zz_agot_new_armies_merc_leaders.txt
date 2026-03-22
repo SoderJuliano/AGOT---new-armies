@@ -1,0 +1,61 @@
+AGNA_1 = {
+	name = "Moro"
+	religion = fots_seven
+	culture = stormlander_main
+	trait = education_martial_3
+	trait = organizer
+	trait = wrathful
+	trait = ambitious
+	8200.1.1 = { birth = yes }
+}
+
+AGNA_2 = {
+	name = "Urron"
+	religion = fots_drowned
+	culture = ironborn
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = brave
+	8200.1.1 = { birth = yes }
+}
+
+AGNA_3 = {
+	name = "Harl"
+	religion = fots_seven
+	culture = wolfswood_clansman
+	trait = education_martial_2
+	trait = rough_terrain_expert
+	trait = brave
+	8200.1.1 = { birth = yes }
+}
+
+AGNA_4 = {
+	name = "Belicho"
+	religion = fc_pan_myr
+	culture = myrish
+	trait = education_martial_3
+	trait = logistician
+	trait = calm
+	8200.1.1 = { birth = yes }
+}
+
+AGNA_5 = {
+	name = "Torren"
+	religion = fots_seven
+	culture = northman
+	trait = education_martial_4
+	trait = unyielding_defender
+	trait = stubborn
+	8200.1.1 = { birth = yes }
+}
+
+AGNA_6 = {
+	name = "Beron"
+	religion = rhllor_fots
+	culture = riverman_main
+	trait = education_martial_3
+	trait = rough_terrain_expert
+	trait = brave
+	trait = zealous
+	8200.1.1 = { birth = yes }
+}

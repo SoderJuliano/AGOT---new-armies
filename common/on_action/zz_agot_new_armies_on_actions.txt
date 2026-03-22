@@ -1,0 +1,17 @@
+monthly_playable_pulse = {
+	on_actions = {
+		agot_new_armies_monthly_pulse
+	}
+}
+
+monthly_ai_ruler_pulse = {
+	on_actions = {
+		agot_new_armies_monthly_pulse
+	}
+}
+
+agot_new_armies_monthly_pulse = {
+	events = {
+		agot_new_armies.0001
+	}
+}

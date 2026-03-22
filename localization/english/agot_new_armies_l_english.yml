@@ -1,0 +1,49 @@
+﻿l_english:
+ agot_flame_archers_essos:0 "Arqueiros de Chamas de Essos"
+ agot_flame_archers_essos_flavor:0 "Arqueiros e alquimistas de Essos que usam misturas incendiárias instáveis. Mortais contra infantaria leve, mas perigosos até para seus próprios aliados quando o fogo sai do controle."
+
+ agot_mountain_clans:0 "Clãs das Montanhas"
+ agot_mountain_clans_flavor:0 "Guerreiros irregulares das Montanhas da Lua. Brutais em terreno acidentado, porém pouco disciplinados em batalhas longas em campo aberto."
+
+ agot_ironborn_assault_divers:0 "Mergulhadores de Assalto"
+ agot_ironborn_assault_divers_flavor:0 "Sabotadores das Ilhas de Ferro especializados em incursões anfíbias, ataques de surpresa e desorganização inimiga."
+
+ agot_second_sons:0 "Segundos Filhos"
+ agot_second_sons_flavor:0 "Companhia mercenária veterana de Essos: eficiente em quase qualquer terreno, mas sua lealdade depende do pagamento em ouro."
+
+ agot_monolith_warriors:0 "Guerreiros Monólito"
+ agot_monolith_warriors_flavor:0 "Infantaria pesada da Casa Monólito. Avançam como muralhas vivas, absorvem impactos brutais e mantêm a linha quando tudo ao redor desaba."
+
+ agot_brotherhood_without_banners:0 "Irmandade Sem Bandeiras"
+ agot_brotherhood_without_banners_flavor:0 "Combatentes irregulares que abandonaram lealdades feudais para lutar pelo povo comum. Especialistas em floresta, emboscada e guerra de atrito."
+
+ agot_flame_archers_unstable_fire:0 "Fogo Instável"
+ agot_flame_archers_unstable_fire_desc:0 "As misturas incendiárias explodiram cedo demais e desorganizaram a linha de frente."
+
+ agot_flame_archers_rhllor_zeal:0 "Zelo de R'hllor"
+ agot_flame_archers_rhllor_zeal_desc:0 "Uma saraivada de fogo bem coordenada elevou o moral e a letalidade dos arqueiros."
+
+ agot_second_sons_unpaid:0 "Lealdade ao Ouro Quebrada"
+ agot_second_sons_unpaid_desc:0 "Sem pagamento, os Segundos Filhos lutam sem motivação e exigem mais recursos para permanecer no exército."
+
+ agot_monolith_anchor:0 "Inabaláveis como a Rocha"
+ agot_monolith_anchor_desc:0 "A formação monolítica fecha as fileiras e se torna mais resistente conforme o combate se estende."
+
+ agot_monolith_hammer_impact:0 "Impacto de Martelo"
+ agot_monolith_hammer_impact_desc:0 "No momento certo, os Guerreiros Monólito descarregam um golpe devastador contra alvos blindados."
+
+ agot_bwb_flaming_swords:0 "Espadas Flamejantes"
+ agot_bwb_flaming_swords_desc:0 "A fé e o fervor da Irmandade inflamam o combate, aumentando o dano causado por um breve período."
+
+ agot_bwb_brought_back:0 "Aquele que Foi Trazido de Volta"
+ agot_bwb_brought_back_desc:0 "Contra todas as probabilidades, a Irmandade recompõe sua linha e mantém mais guerreiros de pé após o choque inicial."
+
+ agot_bwb_unruly_company:0 "Justiça dos Sem Bandeiras"
+ agot_bwb_unruly_company_desc:0 "Longe da guerra justa, a Irmandade se torna difícil de controlar e menos confiável para campanhas convencionais."
+
+ d_laamp_merc_flame_archers:0 "Companhia das Chamas de Essos"
+ d_laamp_merc_mountain_clans:0 "Clãs Livres das Montanhas"
+ d_laamp_merc_assault_divers:0 "Mergulhadores de Assalto"
+ d_laamp_merc_second_sons_new:0 "Segundos Filhos (Contrato)"
+ d_laamp_merc_monolith_guard:0 "Guarda Monólito"
+ d_laamp_merc_brotherhood_without_banners:0 "Irmandade Sem Bandeiras"

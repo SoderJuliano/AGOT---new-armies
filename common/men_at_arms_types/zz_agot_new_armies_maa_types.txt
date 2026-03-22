@@ -1,0 +1,247 @@
+# AGOT New Armies - custom Men-at-Arms
+# Compatible with CK3 1.18.3.* and AGOT 0.4.27+
+
+agot_flame_archers_essos = {
+	type = archers
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 220 }
+	low_maintenance_cost = { gold = 0.9 }
+	high_maintenance_cost = { gold = 4.8 }
+	provision_cost = 8
+	max_sub_regiments = 8
+	stack = 100
+
+	damage = 34
+	toughness = 14
+	pursuit = 14
+	screen = 0
+
+	counters = {
+		skirmishers = 2
+	}
+
+	terrain_bonus = {
+		desert = { damage = 20  toughness = 10  pursuit = 10 screen = 0 }
+		drylands = { damage = 20  toughness = 10  pursuit = 10 screen = 0 }
+		plains = { damage = 10  toughness = 5  pursuit = 5 screen = 0 }
+		farmlands = { damage = 5  toughness = 0  pursuit = 5 screen = 0 }
+		jungle = { damage = -10  toughness = -5  pursuit = -5 screen = 0 }
+		taiga = { damage = -10  toughness = -5  pursuit = -5 screen = 0 }
+		mountains = { damage = -10  toughness = -5  pursuit = -5 screen = 0 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -20  toughness = -10  pursuit = -10 screen = 0 }
+		harsh_winter = { damage = -35  toughness = -20  pursuit = -20 screen = 0 }
+	}
+
+	ai_quality = { value = 75 }
+	icon = agot_flame_archers_essos
+}
+
+agot_mountain_clans = {
+	type = skirmishers
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 140 }
+	low_maintenance_cost = { gold = 0.8 }
+	high_maintenance_cost = { gold = 3.4 }
+	provision_cost = 5
+	max_sub_regiments = 10
+	stack = 100
+
+	damage = 30
+	toughness = 12
+	pursuit = 22
+	screen = 8
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+		mountains = { damage = 25  toughness = 15  pursuit = 20 screen = 10 }
+		hills = { damage = 20  toughness = 10  pursuit = 15 screen = 10 }
+		highlands = { damage = 20  toughness = 10  pursuit = 15 screen = 10 }
+		forest = { damage = 10  toughness = 5  pursuit = 10 screen = 5 }
+		plains = { damage = -15  toughness = -10  pursuit = -10 screen = -5 }
+		farmlands = { damage = -20  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = -10 screen = 0 }
+	}
+
+	ai_quality = { value = 70 }
+	icon = agot_mountain_clans
+}
+
+agot_ironborn_assault_divers = {
+	type = skirmishers
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 180 }
+	low_maintenance_cost = { gold = 1.0 }
+	high_maintenance_cost = { gold = 4.4 }
+	provision_cost = 8
+	max_sub_regiments = 8
+	stack = 100
+
+	damage = 18
+	toughness = 26
+	pursuit = 8
+	screen = 24
+
+	siege_tier = 1
+	siege_value = 0.1
+
+	counters = {
+		archers = 1
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+		wetlands = { damage = 15  toughness = 15  pursuit = 10 screen = 15 }
+		floodplains = { damage = 10  toughness = 10  pursuit = 10 screen = 10 }
+		plains = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		mountains = { damage = -20  toughness = -10  pursuit = -10 screen = -10 }
+		desert = { damage = -20  toughness = -10  pursuit = -10 screen = -10 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -10  toughness = -10  pursuit = -5 screen = -5 }
+		harsh_winter = { damage = -20  toughness = -20  pursuit = -10 screen = -10 }
+	}
+
+	ai_quality = { value = 72 }
+	icon = agot_ironborn_assault_divers
+}
+
+agot_second_sons = {
+	type = heavy_infantry
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 1.5 }
+	high_maintenance_cost = { gold = 5.8 }
+	provision_cost = 10
+	max_sub_regiments = 6
+	stack = 100
+
+	damage = 34
+	toughness = 32
+	pursuit = 12
+	screen = 12
+
+	counters = {
+		skirmishers = 1
+		heavy_infantry = 1
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		farmlands = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		hills = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		forest = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		drylands = { damage = 5  toughness = 5  pursuit = 5 screen = 5 }
+		mountains = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+		desert = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+		taiga = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+		harsh_winter = { damage = -5  toughness = -5  pursuit = -5 screen = -5 }
+	}
+
+	ai_quality = { value = 80 }
+	icon = agot_second_sons
+}
+
+agot_monolith_warriors = {
+	type = heavy_infantry
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 260 }
+	low_maintenance_cost = { gold = 1.6 }
+	high_maintenance_cost = { gold = 6.0 }
+	provision_cost = 12
+	max_sub_regiments = 6
+	stack = 100
+
+	damage = 28
+	toughness = 48
+	pursuit = 2
+	screen = 24
+
+	counters = {
+		heavy_infantry = 2
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+		hills = { damage = 5  toughness = 25  pursuit = -5 screen = 15 }
+		highlands = { damage = 5  toughness = 25  pursuit = -5 screen = 15 }
+		mountains = { damage = 5  toughness = 25  pursuit = -5 screen = 15 }
+		forest = { damage = 0  toughness = 10  pursuit = -5 screen = 5 }
+		plains = { damage = -10  toughness = -20  pursuit = -10 screen = -5 }
+		farmlands = { damage = -10  toughness = -20  pursuit = -10 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = 0  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -5  pursuit = -10 screen = -5 }
+	}
+
+	ai_quality = { value = 84 }
+	icon = agot_monolith_warriors
+}
+
+agot_brotherhood_without_banners = {
+	type = skirmishers
+
+	can_recruit = { always = no }
+
+	buy_cost = { gold = 190 }
+	low_maintenance_cost = { gold = 1.1 }
+	high_maintenance_cost = { gold = 4.6 }
+	provision_cost = 8
+	max_sub_regiments = 8
+	stack = 100
+
+	damage = 26
+	toughness = 20
+	pursuit = 22
+	screen = 10
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+		forest = { damage = 20  toughness = 15  pursuit = 20 screen = 10 }
+		taiga = { damage = 20  toughness = 15  pursuit = 20 screen = 10 }
+		wetlands = { damage = 10  toughness = 10  pursuit = 10 screen = 5 }
+		hills = { damage = 8  toughness = 8  pursuit = 8 screen = 5 }
+		plains = { damage = -10  toughness = -10  pursuit = -5 screen = -5 }
+		farmlands = { damage = -10  toughness = -10  pursuit = -5 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = -5 screen = -5 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = -10 screen = -10 }
+	}
+
+	ai_quality = { value = 82 }
+	icon = agot_brotherhood_without_banners
+}
