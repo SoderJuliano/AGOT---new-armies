@@ -189,3 +189,97 @@ tradition_agot_new_armies_brotherhood_without_banners = {
 		value = 0
 	}
 }
+
+# ============================================================
+# WAVE 2 traditions
+# ============================================================
+
+tradition_agot_new_armies_exercito_pobres = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = tribal
+		4 = levies.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_exercito_de_pobres = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}
+
+tradition_agot_new_armies_cavalaria_estrangeira1 = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = cataphracts.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_cavalaria_estrangeira1 = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}
+
+tradition_agot_new_armies_cavalaria_estrangeira2 = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = cataphracts.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_cavalaria_estrangeira2 = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}
+
+tradition_agot_new_armies_cavalaria_estrangeira3 = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = cataphracts.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_cavalaria_estrangeira3 = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}
+
+tradition_agot_new_armies_cavalaria_estrangeira4 = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = cataphracts.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_cavalaria_estrangeira4 = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}
+
+tradition_agot_new_armies_abridor_portoes = {
+	category = realm
+	layers = {
+		0 = martial
+		1 = tribal
+		4 = malleable_invaders.dds
+	}
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+	parameters = { unlock_maa_agot_abridor_portoes = yes }
+	cost = { prestige = { add = { value = tradition_base_cost desc = BASE format = "BASE_VALUE_FORMAT" } } }
+	ai_will_do = { value = 0 }
+}

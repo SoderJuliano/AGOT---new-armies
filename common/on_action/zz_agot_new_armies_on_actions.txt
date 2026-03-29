@@ -46,12 +46,33 @@ agot_new_armies_game_start = {
 		culture:crownlander = {
 			add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
 		}
+
+		# Wave 2
+		culture:crownlander = {
+			add_culture_tradition = tradition_agot_new_armies_exercito_pobres
+		}
+		culture:pentoshi = {
+			add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira1
+		}
+		culture:myrish = {
+			add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira2
+		}
+		culture:braavosi = {
+			add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira3
+		}
+		culture:braavosi = {
+			add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira4
+		}
+		culture:ironborn = {
+			add_culture_tradition = tradition_agot_new_armies_abridor_portoes
+		}
 	}
 }
 
 agot_new_armies_monthly_sync = {
 	events = {
 		agot_new_armies.0000
+		agot_new_armies.0300
 	}
 }
 

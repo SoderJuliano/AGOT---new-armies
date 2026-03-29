@@ -52,13 +52,13 @@
  agot_new_armies_search_companies_decision_confirm:0 "Enviar Emissários"
 
  agot_new_armies.0200.t:0 "Companhias de Guerra Encontradas"
- agot_new_armies.0200.desc:0 "Seus emissários localizaram seis companhias especiais prontas para contrato. O ouro será descontado imediatamente. As tropas poderão ser erguidas pela aba Militar.\n\nAs mesmas companhias também estão disponíveis na aba Mercenários para contratação pelo sistema padrão."
- agot_new_armies.0200.a:0 "Contratar Arqueiros de Chamas de Essos — 900 homens [450 ouro]"
- agot_new_armies.0200.b:0 "Contratar Clãs das Montanhas — 1.200 homens [500 ouro]"
- agot_new_armies.0200.c:0 "Contratar Mergulhadores de Assalto — 2.500 homens [1.100 ouro]"
- agot_new_armies.0200.d:0 "Contratar Segundos Filhos — 6.000 homens [2.500 ouro]"
- agot_new_armies.0200.e:0 "Contratar Guerreiros Monólito — 1.000 homens [600 ouro]"
- agot_new_armies.0200.f:0 "Contratar Irmandade Sem Bandeiras — 250 homens [150 ouro]"
+ agot_new_armies.0200.desc:0 "Seus emissários localizaram doze companhias especiais prontas para contrato de 3 anos. O ouro será descontado imediatamente. As tropas poderão ser erguidas pela aba Militar. Após 3 anos o contrato expira e o regimento é dissolvido.\n\nAs mesmas companhias também estão disponíveis na aba Mercenários para contratação pelo sistema padrão."
+ agot_new_armies.0200.a:0 "Contratar Arqueiros de Chamas de Essos — 900 homens (450 ouro)"
+ agot_new_armies.0200.b:0 "Contratar Clãs das Montanhas — 1.200 homens (500 ouro)"
+ agot_new_armies.0200.c:0 "Contratar Mergulhadores de Assalto — 2.500 homens (1.100 ouro)"
+ agot_new_armies.0200.d:0 "Contratar Segundos Filhos — 6.000 homens (2.500 ouro)"
+ agot_new_armies.0200.e:0 "Contratar Guerreiros Monólito — 1.000 homens (600 ouro)"
+ agot_new_armies.0200.f:0 "Contratar Irmandade Sem Bandeiras — 250 homens (150 ouro)"
  agot_new_armies.0200.g:0 "Fechar (usar aba Mercenários)"
 
  agot_new_armies.0100.t:0 "Companhias Especiais Disponíveis"
@@ -82,3 +82,78 @@
  d_laamp_merc_second_sons_new:0 "Segundos Filhos (Contrato)"
  d_laamp_merc_monolith_guard:0 "Guarda Monólito"
  d_laamp_merc_brotherhood_without_banners:0 "Irmandade Sem Bandeiras"
+
+ agot_merc_contract_flame_archers:0 "Contrato: Arqueiros de Chamas (3 anos)"
+ agot_merc_contract_flame_archers_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_mountain_clans:0 "Contrato: Clãs das Montanhas (3 anos)"
+ agot_merc_contract_mountain_clans_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_assault_divers:0 "Contrato: Mergulhadores de Assalto (3 anos)"
+ agot_merc_contract_assault_divers_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_second_sons:0 "Contrato: Segundos Filhos (3 anos)"
+ agot_merc_contract_second_sons_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_monolith_warriors:0 "Contrato: Guerreiros Monólito (3 anos)"
+ agot_merc_contract_monolith_warriors_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_brotherhood:0 "Contrato: Irmandade Sem Bandeiras (3 anos)"
+ agot_merc_contract_brotherhood_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+
+ # ============ WAVE 2 — MAA Names & Flavors ============
+
+ agot_exercito_de_pobres:0 "Exército dos Pobres"
+ agot_exercito_de_pobres_flavor:0 "Desesperados, camponeses famintos e homens quebrados que empunham foices, paus e o que encontrarem. São milhares — e morrem como moscas. Mas sua maré de corpos pode afogar qualquer formação."
+
+ agot_cavalaria_pesada_estrangeira1:0 "Lanceiros de Volantis"
+ agot_cavalaria_pesada_estrangeira1_flavor:0 "Cavalaria pesada recrutada entre exilados e sellswords de Volantis. Seus cavalos blindados e lanças longas perfuram qualquer formação com cargas devastadoras."
+
+ agot_cavalaria_pesada_estrangeira2:0 "Catafractos de Nova Ghis"
+ agot_cavalaria_pesada_estrangeira2_flavor:0 "Guerreiros blindados de Nova Ghis, montados em cavalos de guerra cobertos por escamas de bronze. Lentos mas quase indestrutíveis em combate direto."
+
+ agot_cavalaria_pesada_estrangeira3:0 "Cavaleiros do Sangue de Qarth"
+ agot_cavalaria_pesada_estrangeira3_flavor:0 "Mercenários de elite de Qarth, conhecidos por suas armaduras de seda reforçada e lâminas curvas. Rápidos e letais em perseguição, não deixam ninguém escapar."
+
+ agot_cavalaria_pesada_estrangeira4:0 "Couraceiros de Yi Ti"
+ agot_cavalaria_pesada_estrangeira4_flavor:0 "A elite blindada do distante Yi Ti. Poucos em número, mas cada cavaleiro vale por dez. Armaduras lacadas de ouro e vermelho, impenetráveis."
+
+ agot_abridor_portoes_estrangeiro:0 "Abridores de Portões"
+ agot_abridor_portoes_estrangeiro_flavor:0 "Engenheiros de assédio estrangeiros especializados em derrubar muralhas e portões. Carregam aríetes, engenhos de sapa e sabem onde golpear para que tudo desabe."
+
+ # ============ WAVE 2 — Event Options 0100 ============
+
+ agot_new_armies.0100.h:0 "Contratar Exército dos Pobres (10.000 homens) - 300 ouro"
+ agot_new_armies.0100.i:0 "Contratar Lanceiros de Volantis (1.500 homens) - 1.200 ouro"
+ agot_new_armies.0100.j:0 "Contratar Catafractos de Nova Ghis (1.200 homens) - 1.100 ouro"
+ agot_new_armies.0100.k:0 "Contratar Cavaleiros do Sangue de Qarth (1.800 homens) - 1.300 ouro"
+ agot_new_armies.0100.l:0 "Contratar Couraceiros de Yi Ti (800 homens) - 1.500 ouro"
+ agot_new_armies.0100.m:0 "Contratar Abridores de Portões (500 homens) - 900 ouro"
+
+ # ============ WAVE 2 — Event Options 0200 ============
+
+ agot_new_armies.0200.h:0 "Contratar Exército dos Pobres — 10.000 homens (300 ouro)"
+ agot_new_armies.0200.i:0 "Contratar Lanceiros de Volantis — 1.500 homens (1.200 ouro)"
+ agot_new_armies.0200.j:0 "Contratar Catafractos de Nova Ghis — 1.200 homens (1.100 ouro)"
+ agot_new_armies.0200.k:0 "Contratar Cavaleiros do Sangue de Qarth — 1.800 homens (1.300 ouro)"
+ agot_new_armies.0200.l:0 "Contratar Couraceiros de Yi Ti — 800 homens (1.500 ouro)"
+ agot_new_armies.0200.m:0 "Contratar Abridores de Portões — 500 homens (900 ouro)"
+
+ # ============ WAVE 2 — Contract Modifiers ============
+
+ agot_merc_contract_exercito_pobres:0 "Contrato: Exército dos Pobres (3 anos)"
+ agot_merc_contract_exercito_pobres_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_cavalaria_estrangeira1:0 "Contrato: Lanceiros de Volantis (3 anos)"
+ agot_merc_contract_cavalaria_estrangeira1_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_cavalaria_estrangeira2:0 "Contrato: Catafractos de Nova Ghis (3 anos)"
+ agot_merc_contract_cavalaria_estrangeira2_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_cavalaria_estrangeira3:0 "Contrato: Cavaleiros do Sangue de Qarth (3 anos)"
+ agot_merc_contract_cavalaria_estrangeira3_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_cavalaria_estrangeira4:0 "Contrato: Couraceiros de Yi Ti (3 anos)"
+ agot_merc_contract_cavalaria_estrangeira4_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+ agot_merc_contract_abridor_portoes:0 "Contrato: Abridores de Portões (3 anos)"
+ agot_merc_contract_abridor_portoes_desc:0 "Contrato mercenário ativo — não conta no limite de regimentos. Expira em 3 anos."
+
+ # ============ WAVE 2 — LAAMP Titles ============
+
+ d_laamp_merc_exercito_pobres:0 "Exército dos Pobres"
+ d_laamp_merc_cavalaria_estrangeira1:0 "Lanceiros de Volantis"
+ d_laamp_merc_cavalaria_estrangeira2:0 "Catafractos de Nova Ghis"
+ d_laamp_merc_cavalaria_estrangeira3:0 "Cavaleiros do Sangue de Qarth"
+ d_laamp_merc_cavalaria_estrangeira4:0 "Couraceiros de Yi Ti"
+ d_laamp_merc_abridor_portoes:0 "Abridores de Portões"

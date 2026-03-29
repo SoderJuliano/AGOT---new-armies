@@ -293,3 +293,287 @@ agot_brotherhood_without_banners = {
 	ai_quality = { value = 82 }
 	icon = agot_brotherhood_without_banners
 }
+
+# ============================================================
+# WAVE 2 — new mercenary companies
+# ============================================================
+
+agot_exercito_de_pobres = {
+	type = pikemen
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_exercito_de_pobres }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 30 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 100
+	stack = 100
+
+	damage = 6
+	toughness = 6
+	pursuit = 2
+	screen = 1
+
+	terrain_bonus = {
+		hills = { damage = 2  toughness = 4  pursuit = 0 screen = 2 }
+		mountains = { damage = -4  toughness = -2  pursuit = -2 screen = 0 }
+		plains = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+		forest = { damage = -2  toughness = -2  pursuit = -2 screen = 0 }
+		wetlands = { damage = -4  toughness = -4  pursuit = -2 screen = 0 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -2  toughness = -4  pursuit = -2 screen = 0 }
+		harsh_winter = { damage = -4  toughness = -6  pursuit = -2 screen = 0 }
+	}
+
+	ai_quality = { value = 30 }
+	icon = exercito_de_pobres
+}
+
+agot_cavalaria_pesada_estrangeira1 = {
+	type = heavy_cavalry
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_cavalaria_estrangeira1 }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 280 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 15
+	stack = 100
+
+	damage = 42
+	toughness = 28
+	pursuit = 28
+	screen = 8
+
+	counters = {
+		heavy_infantry = 1
+		archers = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 15  toughness = 10  pursuit = 10 screen = 5 }
+		farmlands = { damage = 10  toughness = 5  pursuit = 5 screen = 5 }
+		drylands = { damage = 10  toughness = 5  pursuit = 5 screen = 5 }
+		mountains = { damage = -15  toughness = -10  pursuit = -10 screen = -5 }
+		forest = { damage = -10  toughness = -5  pursuit = -5 screen = -5 }
+		wetlands = { damage = -15  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	ai_quality = { value = 85 }
+	icon = cavalaria_pesada_estrangeira1
+}
+
+agot_cavalaria_pesada_estrangeira2 = {
+	type = heavy_cavalry
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_cavalaria_estrangeira2 }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 300 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 12
+	stack = 100
+
+	damage = 36
+	toughness = 38
+	pursuit = 16
+	screen = 14
+
+	counters = {
+		heavy_infantry = 1
+		pikemen = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 10  toughness = 15  pursuit = 5 screen = 10 }
+		hills = { damage = 5  toughness = 10  pursuit = 0 screen = 5 }
+		drylands = { damage = 5  toughness = 10  pursuit = 0 screen = 5 }
+		mountains = { damage = -10  toughness = -5  pursuit = -10 screen = -5 }
+		wetlands = { damage = -15  toughness = -10  pursuit = -5 screen = -5 }
+		forest = { damage = -10  toughness = -5  pursuit = -8 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	ai_quality = { value = 86 }
+	icon = cavalaria_pesada_estrangeira2
+}
+
+agot_cavalaria_pesada_estrangeira3 = {
+	type = heavy_cavalry
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_cavalaria_estrangeira3 }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 18
+	stack = 100
+
+	damage = 34
+	toughness = 24
+	pursuit = 36
+	screen = 6
+
+	counters = {
+		archers = 1
+		skirmishers = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 10  toughness = 5  pursuit = 15 screen = 5 }
+		drylands = { damage = 10  toughness = 5  pursuit = 10 screen = 5 }
+		farmlands = { damage = 5  toughness = 5  pursuit = 10 screen = 5 }
+		mountains = { damage = -10  toughness = -10  pursuit = -10 screen = -5 }
+		forest = { damage = -5  toughness = -5  pursuit = -5 screen = -5 }
+		wetlands = { damage = -10  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = -10 screen = -5 }
+	}
+
+	ai_quality = { value = 84 }
+	icon = cavalaria_pesada_estrangeira3
+}
+
+agot_cavalaria_pesada_estrangeira4 = {
+	type = heavy_cavalry
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_cavalaria_estrangeira4 }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 400 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 8
+	stack = 100
+
+	damage = 46
+	toughness = 44
+	pursuit = 10
+	screen = 20
+
+	counters = {
+		heavy_infantry = 2
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 5  toughness = 10  pursuit = 0 screen = 10 }
+		hills = { damage = 5  toughness = 10  pursuit = 0 screen = 10 }
+		farmlands = { damage = 5  toughness = 5  pursuit = 0 screen = 5 }
+		mountains = { damage = -15  toughness = -5  pursuit = -10 screen = -5 }
+		wetlands = { damage = -15  toughness = -10  pursuit = -5 screen = -10 }
+		forest = { damage = -10  toughness = -5  pursuit = -5 screen = -5 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = 0  pursuit = -5 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -5  pursuit = -10 screen = -5 }
+	}
+
+	ai_quality = { value = 90 }
+	icon = cavalaria_pesada_estrangeira4
+}
+
+agot_abridor_portoes_estrangeiro = {
+	type = heavy_infantry
+
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_abridor_portoes }
+				has_government = mercenary_government
+			}
+		}
+	}
+
+	buy_cost = { gold = 250 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 5
+	stack = 100
+
+	damage = 14
+	toughness = 22
+	pursuit = 0
+	screen = 4
+
+	siege_tier = 2
+	siege_value = 0.6
+
+	terrain_bonus = {
+		plains = { damage = 0  toughness = 5  pursuit = 0 screen = 0 }
+		farmlands = { damage = 0  toughness = 5  pursuit = 0 screen = 0 }
+		hills = { damage = 0  toughness = 0  pursuit = 0 screen = 0 }
+		mountains = { damage = -5  toughness = -5  pursuit = 0 screen = -2 }
+		wetlands = { damage = -5  toughness = -10  pursuit = 0 screen = -2 }
+		desert = { damage = -5  toughness = -10  pursuit = 0 screen = -2 }
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -5  toughness = -5  pursuit = 0 screen = 0 }
+		harsh_winter = { damage = -10  toughness = -10  pursuit = 0 screen = -2 }
+	}
+
+	ai_quality = { value = 78 }
+	icon = abridor_portoes_estrangeiro
+}

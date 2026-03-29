@@ -77,3 +77,83 @@ d_laamp_merc_brotherhood_without_banners = {
 
 	ai_primary_priority = { add = @never_primary_score }
 }
+
+# Wave 2 LAAMP titles
+
+d_laamp_merc_exercito_pobres = {
+	color = { 140 130 100 }
+	capital = c_duskendale
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_merc_cavalaria_estrangeira1 = {
+	color = { 180 140 60 }
+	capital = c_pentos
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_merc_cavalaria_estrangeira2 = {
+	color = { 160 120 70 }
+	capital = c_pentos
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_merc_cavalaria_estrangeira3 = {
+	color = { 130 40 50 }
+	capital = c_pentos
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_merc_cavalaria_estrangeira4 = {
+	color = { 200 170 60 }
+	capital = c_pentos
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_merc_abridor_portoes = {
+	color = { 100 100 110 }
+	capital = c_hayford
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}

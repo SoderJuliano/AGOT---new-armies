@@ -159,3 +159,155 @@ d_laamp_merc_brotherhood_without_banners = {
 		}
 	}
 }
+
+# Wave 2 title histories
+
+d_laamp_merc_exercito_pobres = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_7
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_exercito_de_pobres check_can_recruit = no size = 100 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}
+
+d_laamp_merc_cavalaria_estrangeira1 = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_8
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira1 check_can_recruit = no size = 15 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}
+
+d_laamp_merc_cavalaria_estrangeira2 = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_9
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira2 check_can_recruit = no size = 12 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}
+
+d_laamp_merc_cavalaria_estrangeira3 = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_10
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira3 check_can_recruit = no size = 18 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}
+
+d_laamp_merc_cavalaria_estrangeira4 = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_11
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira4 check_can_recruit = no size = 8 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}
+
+d_laamp_merc_abridor_portoes = {
+	8082.1.1 = {
+		liege = 0
+		holder = AGNA_12
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			holder ?= {
+				if = {
+					limit = { NOT = { has_realm_law = camp_purpose_mercenaries } }
+					add_realm_law_skip_effects = camp_purpose_mercenaries
+				}
+				create_maa_regiment = { type = agot_abridor_portoes_estrangeiro check_can_recruit = no size = 5 }
+			}
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
+		}
+	}
+}

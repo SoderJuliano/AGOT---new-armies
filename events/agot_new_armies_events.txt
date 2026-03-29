@@ -15,6 +15,7 @@ agot_new_armies.0000 = {
 	}
 
 	immediate = {
+		# --- Tradition sync (ongoing saves) ---
 		culture:pentoshi = {
 			if = {
 				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_flame_archers } }
@@ -68,6 +69,132 @@ agot_new_armies.0000 = {
 				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners } }
 				add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
 			}
+		}
+
+		# Wave 2 tradition sync
+		culture:crownlander = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_exercito_pobres } }
+				add_culture_tradition = tradition_agot_new_armies_exercito_pobres
+			}
+		}
+		culture:pentoshi = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira1 } }
+				add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira1
+			}
+		}
+		culture:myrish = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira2 } }
+				add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira2
+			}
+		}
+		culture:braavosi = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira3 } }
+				add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira3
+			}
+		}
+		culture:braavosi = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira4 } }
+				add_culture_tradition = tradition_agot_new_armies_cavalaria_estrangeira4
+			}
+		}
+		culture:ironborn = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_abridor_portoes } }
+				add_culture_tradition = tradition_agot_new_armies_abridor_portoes
+			}
+		}
+
+		# --- Contract modifier sync (existing saves without modifiers) ---
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_flame_archers_essos }
+				NOT = { has_character_modifier = agot_merc_contract_flame_archers }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_flame_archers days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_mountain_clans }
+				NOT = { has_character_modifier = agot_merc_contract_mountain_clans }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_mountain_clans days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_ironborn_assault_divers }
+				NOT = { has_character_modifier = agot_merc_contract_assault_divers }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_assault_divers days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_second_sons }
+				NOT = { has_character_modifier = agot_merc_contract_second_sons }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_second_sons days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_monolith_warriors }
+				NOT = { has_character_modifier = agot_merc_contract_monolith_warriors }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_monolith_warriors days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners }
+				NOT = { has_character_modifier = agot_merc_contract_brotherhood }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_brotherhood days = 1095 }
+		}
+
+		# Wave 2 contract sync
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_exercito_de_pobres }
+				NOT = { has_character_modifier = agot_merc_contract_exercito_pobres }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_exercito_pobres days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira1 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira1 }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira1 days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira2 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira2 }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira2 days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira3 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira3 }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira3 days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira4 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira4 }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira4 days = 1095 }
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_abridor_portoes_estrangeiro }
+				NOT = { has_character_modifier = agot_merc_contract_abridor_portoes }
+			}
+			add_character_modifier = { modifier = agot_merc_contract_abridor_portoes days = 1095 }
 		}
 	}
 }
@@ -172,6 +299,94 @@ agot_new_armies.0001 = {
 				80 = { }
 			}
 		}
+
+		# --- Contract expiry: dissolve regiments when 3-year contract ends ---
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_flame_archers_essos }
+				NOT = { has_character_modifier = agot_merc_contract_flame_archers }
+			}
+			remove_all_maa_regiments_of_type = agot_flame_archers_essos
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_mountain_clans }
+				NOT = { has_character_modifier = agot_merc_contract_mountain_clans }
+			}
+			remove_all_maa_regiments_of_type = agot_mountain_clans
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_ironborn_assault_divers }
+				NOT = { has_character_modifier = agot_merc_contract_assault_divers }
+			}
+			remove_all_maa_regiments_of_type = agot_ironborn_assault_divers
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_second_sons }
+				NOT = { has_character_modifier = agot_merc_contract_second_sons }
+			}
+			remove_all_maa_regiments_of_type = agot_second_sons
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_monolith_warriors }
+				NOT = { has_character_modifier = agot_merc_contract_monolith_warriors }
+			}
+			remove_all_maa_regiments_of_type = agot_monolith_warriors
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners }
+				NOT = { has_character_modifier = agot_merc_contract_brotherhood }
+			}
+			remove_all_maa_regiments_of_type = agot_brotherhood_without_banners
+		}
+
+		# Wave 2 contract expiry
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_exercito_de_pobres }
+				NOT = { has_character_modifier = agot_merc_contract_exercito_pobres }
+			}
+			remove_all_maa_regiments_of_type = agot_exercito_de_pobres
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira1 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira1 }
+			}
+			remove_all_maa_regiments_of_type = agot_cavalaria_pesada_estrangeira1
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira2 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira2 }
+			}
+			remove_all_maa_regiments_of_type = agot_cavalaria_pesada_estrangeira2
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira3 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira3 }
+			}
+			remove_all_maa_regiments_of_type = agot_cavalaria_pesada_estrangeira3
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira4 }
+				NOT = { has_character_modifier = agot_merc_contract_cavalaria_estrangeira4 }
+			}
+			remove_all_maa_regiments_of_type = agot_cavalaria_pesada_estrangeira4
+		}
+		if = {
+			limit = {
+				any_maa_regiment = { is_maa_type = agot_abridor_portoes_estrangeiro }
+				NOT = { has_character_modifier = agot_merc_contract_abridor_portoes }
+			}
+			remove_all_maa_regiments_of_type = agot_abridor_portoes_estrangeiro
+		}
 	}
 }
 
@@ -188,6 +403,7 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_flame_archers_essos } }
 		}
 		add_gold = -450
+		add_character_modifier = { modifier = agot_merc_contract_flame_archers days = 1095 }
 		create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
 	}
 
@@ -198,6 +414,7 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_mountain_clans } }
 		}
 		add_gold = -500
+		add_character_modifier = { modifier = agot_merc_contract_mountain_clans days = 1095 }
 		create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
 	}
 
@@ -208,6 +425,7 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_ironborn_assault_divers } }
 		}
 		add_gold = -1100
+		add_character_modifier = { modifier = agot_merc_contract_assault_divers days = 1095 }
 		create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
 	}
 
@@ -218,6 +436,7 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_second_sons } }
 		}
 		add_gold = -2500
+		add_character_modifier = { modifier = agot_merc_contract_second_sons days = 1095 }
 		create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
 	}
 
@@ -228,6 +447,7 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_monolith_warriors } }
 		}
 		add_gold = -600
+		add_character_modifier = { modifier = agot_merc_contract_monolith_warriors days = 1095 }
 		create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
 	}
 
@@ -238,7 +458,75 @@ agot_new_armies.0100 = {
 			NOT = { any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners } }
 		}
 		add_gold = -150
+		add_character_modifier = { modifier = agot_merc_contract_brotherhood days = 1095 }
 		create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
+	}
+
+	# Wave 2 options
+	option = {
+		name = agot_new_armies.0100.h
+		trigger = {
+			gold >= 300
+			NOT = { any_maa_regiment = { is_maa_type = agot_exercito_de_pobres } }
+		}
+		add_gold = -300
+		add_character_modifier = { modifier = agot_merc_contract_exercito_pobres days = 1095 }
+		create_maa_regiment = { type = agot_exercito_de_pobres check_can_recruit = no size = 100 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.i
+		trigger = {
+			gold >= 1200
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira1 } }
+		}
+		add_gold = -1200
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira1 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira1 check_can_recruit = no size = 15 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.j
+		trigger = {
+			gold >= 1100
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira2 } }
+		}
+		add_gold = -1100
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira2 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira2 check_can_recruit = no size = 12 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.k
+		trigger = {
+			gold >= 1300
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira3 } }
+		}
+		add_gold = -1300
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira3 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira3 check_can_recruit = no size = 18 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.l
+		trigger = {
+			gold >= 1500
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira4 } }
+		}
+		add_gold = -1500
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira4 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira4 check_can_recruit = no size = 8 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.m
+		trigger = {
+			gold >= 900
+			NOT = { any_maa_regiment = { is_maa_type = agot_abridor_portoes_estrangeiro } }
+		}
+		add_gold = -900
+		add_character_modifier = { modifier = agot_merc_contract_abridor_portoes days = 1095 }
+		create_maa_regiment = { type = agot_abridor_portoes_estrangeiro check_can_recruit = no size = 5 }
 	}
 
 	option = {
@@ -285,38 +573,135 @@ agot_new_armies.0200 = {
 
 	option = {
 		name = agot_new_armies.0200.a
+		trigger = {
+			gold >= 450
+			NOT = { any_maa_regiment = { is_maa_type = agot_flame_archers_essos } }
+		}
 		add_gold = -450
+		add_character_modifier = { modifier = agot_merc_contract_flame_archers days = 1095 }
 		create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
 	}
 
 	option = {
 		name = agot_new_armies.0200.b
+		trigger = {
+			gold >= 500
+			NOT = { any_maa_regiment = { is_maa_type = agot_mountain_clans } }
+		}
 		add_gold = -500
+		add_character_modifier = { modifier = agot_merc_contract_mountain_clans days = 1095 }
 		create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
 	}
 
 	option = {
 		name = agot_new_armies.0200.c
+		trigger = {
+			gold >= 1100
+			NOT = { any_maa_regiment = { is_maa_type = agot_ironborn_assault_divers } }
+		}
 		add_gold = -1100
+		add_character_modifier = { modifier = agot_merc_contract_assault_divers days = 1095 }
 		create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
 	}
 
 	option = {
 		name = agot_new_armies.0200.d
+		trigger = {
+			gold >= 2500
+			NOT = { any_maa_regiment = { is_maa_type = agot_second_sons } }
+		}
 		add_gold = -2500
+		add_character_modifier = { modifier = agot_merc_contract_second_sons days = 1095 }
 		create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
 	}
 
 	option = {
 		name = agot_new_armies.0200.e
+		trigger = {
+			gold >= 600
+			NOT = { any_maa_regiment = { is_maa_type = agot_monolith_warriors } }
+		}
 		add_gold = -600
+		add_character_modifier = { modifier = agot_merc_contract_monolith_warriors days = 1095 }
 		create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
 	}
 
 	option = {
 		name = agot_new_armies.0200.f
+		trigger = {
+			gold >= 150
+			NOT = { any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners } }
+		}
 		add_gold = -150
+		add_character_modifier = { modifier = agot_merc_contract_brotherhood days = 1095 }
 		create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
+	}
+
+	# Wave 2 options
+	option = {
+		name = agot_new_armies.0200.h
+		trigger = {
+			gold >= 300
+			NOT = { any_maa_regiment = { is_maa_type = agot_exercito_de_pobres } }
+		}
+		add_gold = -300
+		add_character_modifier = { modifier = agot_merc_contract_exercito_pobres days = 1095 }
+		create_maa_regiment = { type = agot_exercito_de_pobres check_can_recruit = no size = 100 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.i
+		trigger = {
+			gold >= 1200
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira1 } }
+		}
+		add_gold = -1200
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira1 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira1 check_can_recruit = no size = 15 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.j
+		trigger = {
+			gold >= 1100
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira2 } }
+		}
+		add_gold = -1100
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira2 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira2 check_can_recruit = no size = 12 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.k
+		trigger = {
+			gold >= 1300
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira3 } }
+		}
+		add_gold = -1300
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira3 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira3 check_can_recruit = no size = 18 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.l
+		trigger = {
+			gold >= 1500
+			NOT = { any_maa_regiment = { is_maa_type = agot_cavalaria_pesada_estrangeira4 } }
+		}
+		add_gold = -1500
+		add_character_modifier = { modifier = agot_merc_contract_cavalaria_estrangeira4 days = 1095 }
+		create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira4 check_can_recruit = no size = 8 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.m
+		trigger = {
+			gold >= 900
+			NOT = { any_maa_regiment = { is_maa_type = agot_abridor_portoes_estrangeiro } }
+		}
+		add_gold = -900
+		add_character_modifier = { modifier = agot_merc_contract_abridor_portoes days = 1095 }
+		create_maa_regiment = { type = agot_abridor_portoes_estrangeiro check_can_recruit = no size = 5 }
 	}
 
 	option = {
@@ -461,6 +846,140 @@ agot_new_armies.0300 = {
 				change_government = landless_adventurer_government
 				add_realm_law_skip_effects = camp_purpose_mercenaries
 				create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
+			}
+		}
+
+		# ============ WAVE 2 ============
+
+		# -- Exercito dos Pobres --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_exercito_pobres = { exists = holder } } }
+			create_character = {
+				culture = culture:crownlander
+				religion = religion:fots_seven
+				trait = education_martial_1
+				trait = cynical
+				trait = immortal
+				age = 40
+				save_scope_as = agot_cap7_scope
+			}
+			title:d_laamp_merc_exercito_pobres = {
+				change_title_holder = { holder = scope:agot_cap7_scope }
+			}
+			scope:agot_cap7_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_exercito_de_pobres check_can_recruit = no size = 100 }
+			}
+		}
+
+		# -- Lanceiros de Volantis --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_cavalaria_estrangeira1 = { exists = holder } } }
+			create_character = {
+				culture = culture:pentoshi
+				religion = religion:rhllor_fots
+				trait = education_martial_3
+				trait = ambitious
+				trait = immortal
+				age = 32
+				save_scope_as = agot_cap8_scope
+			}
+			title:d_laamp_merc_cavalaria_estrangeira1 = {
+				change_title_holder = { holder = scope:agot_cap8_scope }
+			}
+			scope:agot_cap8_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira1 check_can_recruit = no size = 15 }
+			}
+		}
+
+		# -- Catafractos de Nova Ghis --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_cavalaria_estrangeira2 = { exists = holder } } }
+			create_character = {
+				culture = culture:myrish
+				religion = religion:fc_pan_myr
+				trait = education_martial_3
+				trait = stubborn
+				trait = immortal
+				age = 38
+				save_scope_as = agot_cap9_scope
+			}
+			title:d_laamp_merc_cavalaria_estrangeira2 = {
+				change_title_holder = { holder = scope:agot_cap9_scope }
+			}
+			scope:agot_cap9_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira2 check_can_recruit = no size = 12 }
+			}
+		}
+
+		# -- Cavaleiros do Sangue de Qarth --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_cavalaria_estrangeira3 = { exists = holder } } }
+			create_character = {
+				culture = culture:braavosi
+				religion = religion:fots_seven
+				trait = education_martial_4
+				trait = brave
+				trait = immortal
+				age = 30
+				save_scope_as = agot_cap10_scope
+			}
+			title:d_laamp_merc_cavalaria_estrangeira3 = {
+				change_title_holder = { holder = scope:agot_cap10_scope }
+			}
+			scope:agot_cap10_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira3 check_can_recruit = no size = 18 }
+			}
+		}
+
+		# -- Couraceiros de Yi Ti --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_cavalaria_estrangeira4 = { exists = holder } } }
+			create_character = {
+				culture = culture:braavosi
+				religion = religion:fots_seven
+				trait = education_martial_4
+				trait = calm
+				trait = immortal
+				age = 36
+				save_scope_as = agot_cap11_scope
+			}
+			title:d_laamp_merc_cavalaria_estrangeira4 = {
+				change_title_holder = { holder = scope:agot_cap11_scope }
+			}
+			scope:agot_cap11_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_cavalaria_pesada_estrangeira4 check_can_recruit = no size = 8 }
+			}
+		}
+
+		# -- Abridores de Portoes --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_abridor_portoes = { exists = holder } } }
+			create_character = {
+				culture = culture:ironborn
+				religion = religion:fots_drowned
+				trait = education_martial_3
+				trait = brave
+				trait = immortal
+				age = 34
+				save_scope_as = agot_cap12_scope
+			}
+			title:d_laamp_merc_abridor_portoes = {
+				change_title_holder = { holder = scope:agot_cap12_scope }
+			}
+			scope:agot_cap12_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_abridor_portoes_estrangeiro check_can_recruit = no size = 5 }
 			}
 		}
 	}

@@ -43,3 +43,53 @@ agot_bwb_unruly_company = {
 	army_toughness_mult = -0.04
 	army_maintenance_mult = 0.10
 }
+
+# Mercenary contract modifiers – each adds +1 to MAA regiment limit
+agot_merc_contract_flame_archers = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_mountain_clans = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_assault_divers = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_second_sons = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_monolith_warriors = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_brotherhood = {
+	men_at_arms_limit = 1
+}
+
+# Wave 2 contract modifiers
+agot_merc_contract_exercito_pobres = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_cavalaria_estrangeira1 = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_cavalaria_estrangeira2 = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_cavalaria_estrangeira3 = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_cavalaria_estrangeira4 = {
+	men_at_arms_limit = 1
+}
+
+agot_merc_contract_abridor_portoes = {
+	men_at_arms_limit = 1
+}

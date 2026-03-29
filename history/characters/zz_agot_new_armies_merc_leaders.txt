@@ -65,3 +65,71 @@ AGNA_6 = {
 	trait = immortal
 	8060.1.1 = { birth = yes }
 }
+
+# Wave 2 leaders
+
+AGNA_7 = {
+	name = "Rogar"
+	religion = fots_seven
+	culture = crownlander
+	trait = education_martial_1
+	trait = brave
+	trait = wrathful
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}
+
+AGNA_8 = {
+	name = "Varro"
+	religion = rhllor_fots
+	culture = pentoshi
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = ambitious
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}
+
+AGNA_9 = {
+	name = "Grazdan"
+	religion = fots_seven
+	culture = myrish
+	trait = education_martial_3
+	trait = unyielding_defender
+	trait = stubborn
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}
+
+AGNA_10 = {
+	name = "Xaro"
+	religion = fots_seven
+	culture = braavosi
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = brave
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}
+
+AGNA_11 = {
+	name = "Jinzha"
+	religion = fots_seven
+	culture = braavosi
+	trait = education_martial_4
+	trait = organizer
+	trait = calm
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}
+
+AGNA_12 = {
+	name = "Garron"
+	religion = fots_seven
+	culture = ironborn
+	trait = education_martial_3
+	trait = logistician
+	trait = patient
+	trait = immortal
+	8060.1.1 = { birth = yes }
+}

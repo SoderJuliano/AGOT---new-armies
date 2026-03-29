@@ -10,6 +10,9 @@ agot_new_armies_search_companies_decision = {
 	}
 
 	effect = {
+		# Spawn/repair LAAMP mercenary companies first
+		trigger_event = { id = agot_new_armies.0300 }
+		# Then show the hiring menu
 		trigger_event = { id = agot_new_armies.0200 }
 	}
 
