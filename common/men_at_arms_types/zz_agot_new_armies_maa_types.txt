@@ -4,13 +4,21 @@
 agot_flame_archers_essos = {
 	type = archers
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_flame_archers_essos }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 220 }
-	low_maintenance_cost = { gold = 0.9 }
-	high_maintenance_cost = { gold = 4.8 }
-	provision_cost = 8
-	max_sub_regiments = 8
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 9
 	stack = 100
 
 	damage = 34
@@ -44,13 +52,21 @@ agot_flame_archers_essos = {
 agot_mountain_clans = {
 	type = skirmishers
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_mountain_clans }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 140 }
-	low_maintenance_cost = { gold = 0.8 }
-	high_maintenance_cost = { gold = 3.4 }
-	provision_cost = 5
-	max_sub_regiments = 10
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 12
 	stack = 100
 
 	damage = 30
@@ -84,13 +100,21 @@ agot_mountain_clans = {
 agot_ironborn_assault_divers = {
 	type = skirmishers
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_ironborn_assault_divers }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 180 }
-	low_maintenance_cost = { gold = 1.0 }
-	high_maintenance_cost = { gold = 4.4 }
-	provision_cost = 8
-	max_sub_regiments = 8
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 25
 	stack = 100
 
 	damage = 18
@@ -126,13 +150,21 @@ agot_ironborn_assault_divers = {
 agot_second_sons = {
 	type = heavy_infantry
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_second_sons }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 300 }
-	low_maintenance_cost = { gold = 1.5 }
-	high_maintenance_cost = { gold = 5.8 }
-	provision_cost = 10
-	max_sub_regiments = 6
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 60
 	stack = 100
 
 	damage = 34
@@ -169,13 +201,21 @@ agot_second_sons = {
 agot_monolith_warriors = {
 	type = heavy_infantry
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_monolith_warriors }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 260 }
-	low_maintenance_cost = { gold = 1.6 }
-	high_maintenance_cost = { gold = 6.0 }
-	provision_cost = 12
-	max_sub_regiments = 6
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 10
 	stack = 100
 
 	damage = 28
@@ -209,14 +249,22 @@ agot_monolith_warriors = {
 agot_brotherhood_without_banners = {
 	type = skirmishers
 
-	can_recruit = { always = no }
+	can_recruit = {
+		OR = {
+			is_player = yes
+			AND = {
+				valid_for_maa_trigger = { PARAMETER = unlock_maa_agot_brotherhood_without_banners }
+				has_government = mercenary_government
+			}
+		}
+	}
 
 	buy_cost = { gold = 190 }
-	low_maintenance_cost = { gold = 1.1 }
-	high_maintenance_cost = { gold = 4.6 }
-	provision_cost = 8
-	max_sub_regiments = 8
-	stack = 100
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = 0
+	max_sub_regiments = 5
+	stack = 50
 
 	damage = 26
 	toughness = 20

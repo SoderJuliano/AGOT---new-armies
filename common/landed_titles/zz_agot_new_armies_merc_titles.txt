@@ -2,7 +2,7 @@
 
 d_laamp_merc_flame_archers = {
 	color = { 220 90 30 }
-	capital = c_myr
+	capital = c_pentos
 
 	definite_form = yes
 	landless = yes
@@ -15,7 +15,7 @@ d_laamp_merc_flame_archers = {
 
 d_laamp_merc_mountain_clans = {
 	color = { 95 90 80 }
-	capital = c_baherion
+	capital = c_gulltown
 
 	definite_form = yes
 	landless = yes
@@ -28,7 +28,7 @@ d_laamp_merc_mountain_clans = {
 
 d_laamp_merc_assault_divers = {
 	color = { 45 85 120 }
-	capital = c_kios
+	capital = c_duskendale
 
 	definite_form = yes
 	landless = yes
@@ -41,7 +41,7 @@ d_laamp_merc_assault_divers = {
 
 d_laamp_merc_second_sons_new = {
 	color = { 120 110 95 }
-	capital = c_goldfuror
+	capital = c_hayford
 
 	definite_form = yes
 	landless = yes
@@ -54,7 +54,7 @@ d_laamp_merc_second_sons_new = {
 
 d_laamp_merc_monolith_guard = {
 	color = { 80 80 80 }
-	capital = c_sellswords_perch
+	capital = c_stonedance
 
 	definite_form = yes
 	landless = yes
@@ -67,7 +67,7 @@ d_laamp_merc_monolith_guard = {
 
 d_laamp_merc_brotherhood_without_banners = {
 	color = { 180 55 45 }
-	capital = c_stoney_sept
+	capital = c_darry
 
 	definite_form = yes
 	landless = yes

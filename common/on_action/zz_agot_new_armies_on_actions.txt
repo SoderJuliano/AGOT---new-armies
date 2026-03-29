@@ -1,5 +1,12 @@
+on_game_start = {
+	on_actions = {
+		agot_new_armies_game_start
+	}
+}
+
 monthly_playable_pulse = {
 	on_actions = {
+		agot_new_armies_monthly_sync
 		agot_new_armies_monthly_pulse
 	}
 }
@@ -7,6 +14,50 @@ monthly_playable_pulse = {
 monthly_ai_ruler_pulse = {
 	on_actions = {
 		agot_new_armies_monthly_pulse
+	}
+}
+
+agot_new_armies_game_start = {
+	effect = {
+		culture:pentoshi = {
+			add_culture_tradition = tradition_agot_new_armies_flame_archers
+		}
+		culture:myrish = {
+			add_culture_tradition = tradition_agot_new_armies_flame_archers
+		}
+		culture:moon_clan = {
+			add_culture_tradition = tradition_agot_new_armies_mountain_clans
+		}
+		culture:wolfswood_clansman = {
+			add_culture_tradition = tradition_agot_new_armies_mountain_clans
+		}
+		culture:ironborn = {
+			add_culture_tradition = tradition_agot_new_armies_assault_divers
+		}
+		culture:braavosi = {
+			add_culture_tradition = tradition_agot_new_armies_second_sons
+		}
+		culture:northman = {
+			add_culture_tradition = tradition_agot_new_armies_monolith_warriors
+		}
+		culture:riverman_main = {
+			add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
+		}
+		culture:crownlander = {
+			add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
+		}
+	}
+}
+
+agot_new_armies_monthly_sync = {
+	events = {
+		agot_new_armies.0000
+	}
+}
+
+agot_new_armies_contract_offer = {
+	events = {
+		agot_new_armies.0101
 	}
 }
 

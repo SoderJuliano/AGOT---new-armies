@@ -1,5 +1,5 @@
 d_laamp_merc_flame_archers = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_1
 		government = landless_adventurer_government
@@ -12,16 +12,21 @@ d_laamp_merc_flame_archers = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }
 
 d_laamp_merc_mountain_clans = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_3
 		government = landless_adventurer_government
@@ -34,16 +39,21 @@ d_laamp_merc_mountain_clans = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }
 
 d_laamp_merc_assault_divers = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_2
 		government = landless_adventurer_government
@@ -56,16 +66,21 @@ d_laamp_merc_assault_divers = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }
 
 d_laamp_merc_second_sons_new = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_4
 		government = landless_adventurer_government
@@ -78,16 +93,21 @@ d_laamp_merc_second_sons_new = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }
 
 d_laamp_merc_monolith_guard = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_5
 		government = landless_adventurer_government
@@ -100,16 +120,21 @@ d_laamp_merc_monolith_guard = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }
 
 d_laamp_merc_brotherhood_without_banners = {
-	8200.1.1 = {
+	8082.1.1 = {
 		liege = 0
 		holder = AGNA_6
 		government = landless_adventurer_government
@@ -122,10 +147,15 @@ d_laamp_merc_brotherhood_without_banners = {
 					}
 					add_realm_law_skip_effects = camp_purpose_mercenaries
 				}
-				create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 2 }
+				create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
 			}
 			create_landless_adventurer_title_history_effect = yes
 			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			if = {
+				limit = { NOT = { has_dlc_feature = roads_to_power } }
+				holder ?= { destroy_title = prev }
+			}
+			else = { holder ?= { add_character_flag = block_laamp_starting_event } }
 		}
 	}
 }

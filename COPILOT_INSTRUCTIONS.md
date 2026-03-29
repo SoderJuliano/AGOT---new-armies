@@ -50,3 +50,10 @@
 - Validar imagens small/big presentes para cada `icon`.
 - Garantir textos em UTF-8 (YML em UTF-8 BOM).
 - Confirmar que não existe README duplicado desnecessário.
+
+## 8) PROIBIDO — NUNCA FAZER
+- **NUNCA copiar arquivos para a pasta do jogo** (`Documents/Paradox Interactive/Crusader Kings III/mod/`).
+- O usuário copia manualmente de Downloads → pasta do jogo. Isso é EXCLUSIVO do usuário.
+- Editar SOMENTE arquivos dentro de `Downloads/AGOT---new-armies/`.
+- Não executar `Copy-Item`, `xcopy`, `robocopy` ou qualquer comando que mova/copie para a pasta do jogo.
+- **NUNCA editar arquivos `.mod`** (`AGOT New Armies.mod`, `descriptor.mod`). Esses arquivos controlam o carregamento do mod pelo launcher e SÓ o usuário pode alterá-los.

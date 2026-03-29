@@ -6,7 +6,8 @@ AGNA_1 = {
 	trait = organizer
 	trait = wrathful
 	trait = ambitious
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }
 
 AGNA_2 = {
@@ -16,7 +17,8 @@ AGNA_2 = {
 	trait = education_martial_3
 	trait = aggressive_attacker
 	trait = brave
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }
 
 AGNA_3 = {
@@ -26,7 +28,8 @@ AGNA_3 = {
 	trait = education_martial_2
 	trait = rough_terrain_expert
 	trait = brave
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }
 
 AGNA_4 = {
@@ -36,7 +39,8 @@ AGNA_4 = {
 	trait = education_martial_3
 	trait = logistician
 	trait = calm
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }
 
 AGNA_5 = {
@@ -46,7 +50,8 @@ AGNA_5 = {
 	trait = education_martial_4
 	trait = unyielding_defender
 	trait = stubborn
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }
 
 AGNA_6 = {
@@ -57,5 +62,6 @@ AGNA_6 = {
 	trait = rough_terrain_expert
 	trait = brave
 	trait = zealous
-	8200.1.1 = { birth = yes }
+	trait = immortal
+	8060.1.1 = { birth = yes }
 }

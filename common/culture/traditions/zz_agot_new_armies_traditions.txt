@@ -1,0 +1,191 @@
+tradition_agot_new_armies_flame_archers = {
+	category = realm
+
+	layers = {
+		0 = intrigue
+		1 = mediterranean
+		4 = cataphracts.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_flame_archers_essos = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_agot_new_armies_mountain_clans = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = tribal
+		4 = woad.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_mountain_clans = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_agot_new_armies_assault_divers = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = shipbuilding.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_ironborn_assault_divers = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_agot_new_armies_second_sons = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = standing_armies.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_second_sons = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_agot_new_armies_monolith_warriors = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = tribal
+		4 = megalithic_constructions.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_monolith_warriors = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+tradition_agot_new_armies_brotherhood_without_banners = {
+	category = realm
+
+	layers = {
+		0 = intrigue
+		1 = north_european
+		4 = stalwart_defenders.dds
+	}
+
+	is_shown = { always = no }
+	can_pick = { always = no }
+	can_pick_for_hybridization = { always = no }
+
+	parameters = {
+		unlock_maa_agot_brotherhood_without_banners = yes
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+		}
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}

@@ -1,12 +1,80 @@
 namespace = agot_new_armies
 
 # Hidden monthly logic:
+# - Save sync: apply mercenary unlock traditions in ongoing saves
+# - Direct mercenary company spawn/repair for ongoing saves
 # - Flame Archers: random unstable fire/backfire effects
 # - Second Sons: penalties when ruler is poor
+agot_new_armies.0000 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_player = yes
+		is_alive = yes
+	}
+
+	immediate = {
+		culture:pentoshi = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_flame_archers } }
+				add_culture_tradition = tradition_agot_new_armies_flame_archers
+			}
+		}
+		culture:myrish = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_flame_archers } }
+				add_culture_tradition = tradition_agot_new_armies_flame_archers
+			}
+		}
+		culture:moon_clan = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_mountain_clans } }
+				add_culture_tradition = tradition_agot_new_armies_mountain_clans
+			}
+		}
+		culture:wolfswood_clansman = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_mountain_clans } }
+				add_culture_tradition = tradition_agot_new_armies_mountain_clans
+			}
+		}
+		culture:ironborn = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_assault_divers } }
+				add_culture_tradition = tradition_agot_new_armies_assault_divers
+			}
+		}
+		culture:braavosi = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_second_sons } }
+				add_culture_tradition = tradition_agot_new_armies_second_sons
+			}
+		}
+		culture:northman = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_monolith_warriors } }
+				add_culture_tradition = tradition_agot_new_armies_monolith_warriors
+			}
+		}
+		culture:riverman_main = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners } }
+				add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
+			}
+		}
+		culture:crownlander = {
+			if = {
+				limit = { NOT = { has_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners } }
+				add_culture_tradition = tradition_agot_new_armies_brotherhood_without_banners
+			}
+		}
+	}
+}
+
 agot_new_armies.0001 = {
 	type = character_event
 	hidden = yes
-	is_triggered_only = yes
 
 	trigger = {
 		is_ruler = yes
@@ -102,6 +170,297 @@ agot_new_armies.0001 = {
 					}
 				}
 				80 = { }
+			}
+		}
+	}
+}
+
+agot_new_armies.0100 = {
+	type = character_event
+	title = agot_new_armies.0100.t
+	desc = agot_new_armies.0100.desc
+	is_triggered_only = yes
+
+	option = {
+		name = agot_new_armies.0100.a
+		trigger = {
+			gold >= 450
+			NOT = { any_maa_regiment = { is_maa_type = agot_flame_archers_essos } }
+		}
+		add_gold = -450
+		create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.b
+		trigger = {
+			gold >= 500
+			NOT = { any_maa_regiment = { is_maa_type = agot_mountain_clans } }
+		}
+		add_gold = -500
+		create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.c
+		trigger = {
+			gold >= 1100
+			NOT = { any_maa_regiment = { is_maa_type = agot_ironborn_assault_divers } }
+		}
+		add_gold = -1100
+		create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.d
+		trigger = {
+			gold >= 2500
+			NOT = { any_maa_regiment = { is_maa_type = agot_second_sons } }
+		}
+		add_gold = -2500
+		create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.e
+		trigger = {
+			gold >= 600
+			NOT = { any_maa_regiment = { is_maa_type = agot_monolith_warriors } }
+		}
+		add_gold = -600
+		create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.f
+		trigger = {
+			gold >= 150
+			NOT = { any_maa_regiment = { is_maa_type = agot_brotherhood_without_banners } }
+		}
+		add_gold = -150
+		create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
+	}
+
+	option = {
+		name = agot_new_armies.0100.g
+	}
+}
+
+agot_new_armies.0101 = {
+	type = character_event
+	title = agot_new_armies.0101.t
+	desc = agot_new_armies.0101.desc
+	is_triggered_only = yes
+
+	trigger = {
+		is_player = yes
+		is_landed = yes
+		is_alive = yes
+		NOT = { has_character_flag = agot_new_armies_contracts_dismissed }
+	}
+
+	option = {
+		name = agot_new_armies.0101.a
+		trigger_event = { id = agot_new_armies.0100 }
+	}
+
+	option = {
+		name = agot_new_armies.0101.b
+		add_character_flag = agot_new_armies_contracts_dismissed
+	}
+}
+
+# Hiring event – fires when player takes the "Buscar Companhias" decision.
+# Fires AFTER event 0300 has spawned the companies so they are in the Mercenaries tab.
+agot_new_armies.0200 = {
+	type = character_event
+	title = agot_new_armies.0200.t
+	desc = agot_new_armies.0200.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = agot_new_armies.0200.a
+		add_gold = -450
+		create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.b
+		add_gold = -500
+		create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.c
+		add_gold = -1100
+		create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.d
+		add_gold = -2500
+		create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.e
+		add_gold = -600
+		create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.f
+		add_gold = -150
+		create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
+	}
+
+	option = {
+		name = agot_new_armies.0200.g
+	}
+}
+
+# Hidden spawner – creates the 6 mercenary companies as hireable LAAMP entities.
+# Called from the decision AND monthly pulse so companies stay alive.
+agot_new_armies.0300 = {
+	type = character_event
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# -- Arqueiros de Chamas de Essos --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_flame_archers = { exists = holder } } }
+			create_character = {
+				culture = culture:myrish
+				religion = religion:rhllor_fots
+				trait = education_martial_3
+				trait = ambitious
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap1_scope
+			}
+			title:d_laamp_merc_flame_archers = {
+				change_title_holder = { holder = scope:agot_cap1_scope }
+			}
+			scope:agot_cap1_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_flame_archers_essos check_can_recruit = no size = 9 }
+			}
+		}
+
+		# -- Clãs das Montanhas --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_mountain_clans = { exists = holder } } }
+			create_character = {
+				culture = culture:wolfswood_clansman
+				religion = religion:fots_seven
+				trait = education_martial_2
+				trait = brave
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap2_scope
+			}
+			title:d_laamp_merc_mountain_clans = {
+				change_title_holder = { holder = scope:agot_cap2_scope }
+			}
+			scope:agot_cap2_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_mountain_clans check_can_recruit = no size = 12 }
+			}
+		}
+
+		# -- Mergulhadores de Assalto --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_assault_divers = { exists = holder } } }
+			create_character = {
+				culture = culture:ironborn
+				religion = religion:fots_drowned
+				trait = education_martial_3
+				trait = brave
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap3_scope
+			}
+			title:d_laamp_merc_assault_divers = {
+				change_title_holder = { holder = scope:agot_cap3_scope }
+			}
+			scope:agot_cap3_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_ironborn_assault_divers check_can_recruit = no size = 25 }
+			}
+		}
+
+		# -- Segundos Filhos --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_second_sons_new = { exists = holder } } }
+			create_character = {
+				culture = culture:myrish
+				religion = religion:fc_pan_myr
+				trait = education_martial_3
+				trait = calm
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap4_scope
+			}
+			title:d_laamp_merc_second_sons_new = {
+				change_title_holder = { holder = scope:agot_cap4_scope }
+			}
+			scope:agot_cap4_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_second_sons check_can_recruit = no size = 60 }
+			}
+		}
+
+		# -- Guerreiros Monólito --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_monolith_guard = { exists = holder } } }
+			create_character = {
+				culture = culture:northman
+				religion = religion:fots_seven
+				trait = education_martial_4
+				trait = stubborn
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap5_scope
+			}
+			title:d_laamp_merc_monolith_guard = {
+				change_title_holder = { holder = scope:agot_cap5_scope }
+			}
+			scope:agot_cap5_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_monolith_warriors check_can_recruit = no size = 10 }
+			}
+		}
+
+		# -- Irmandade Sem Bandeiras --
+		if = {
+			limit = { NOT = { title:d_laamp_merc_brotherhood_without_banners = { exists = holder } } }
+			create_character = {
+				culture = culture:riverman_main
+				religion = religion:rhllor_fots
+				trait = education_martial_3
+				trait = brave
+				trait = immortal
+				age = 35
+				save_scope_as = agot_cap6_scope
+			}
+			title:d_laamp_merc_brotherhood_without_banners = {
+				change_title_holder = { holder = scope:agot_cap6_scope }
+			}
+			scope:agot_cap6_scope = {
+				change_government = landless_adventurer_government
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+				create_maa_regiment = { type = agot_brotherhood_without_banners check_can_recruit = no size = 5 }
 			}
 		}
 	}
